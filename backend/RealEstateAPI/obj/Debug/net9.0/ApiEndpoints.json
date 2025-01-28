@@ -1,0 +1,102 @@
+[
+  {
+    "ContainingType": "RealEstateAPI.Presentation.Controllers.PropertiesController",
+    "Method": "GetProperties",
+    "RelativePath": "api/properties",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "minPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "maxPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstateAPI.Presentation.Controllers.PropertiesController",
+    "Method": "CreateProperty",
+    "RelativePath": "api/properties",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newProperty",
+        "Type": "RealEstateAPI.Domain.Entities.Property",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstateAPI.Presentation.Controllers.PropertiesController",
+    "Method": "GetProperty",
+    "RelativePath": "api/properties/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstateAPI.Presentation.Controllers.PropertiesController",
+    "Method": "UpdateProperty",
+    "RelativePath": "api/properties/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedProperty",
+        "Type": "RealEstateAPI.Domain.Entities.Property",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstateAPI.Presentation.Controllers.PropertiesController",
+    "Method": "DeleteProperty",
+    "RelativePath": "api/properties/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
