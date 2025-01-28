@@ -17,7 +17,7 @@
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetProperties([FromQuery] string? name, [FromQuery] string? address, [FromQuery] decimal? minPrice, [FromQuery] decimal? maxPrice)
+        public async Task<IActionResult> GetProperties(string? name = null, string? address = null, decimal? minPrice = null, decimal? maxPrice = null)
         {
             var properties = await _service.GetPropertiesAsync(name, address, minPrice, maxPrice);
             return Ok(properties);
